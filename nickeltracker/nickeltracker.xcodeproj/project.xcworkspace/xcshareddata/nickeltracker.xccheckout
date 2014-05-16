@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B623203D-CDA0-4921-8CCF-6BE1888EB93D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>nickeltracker</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5714D914-88ED-4F1F-ACA0-19101171759D</key>
+		<string>https://github.com/FuentesWorks/NickelTracker-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>nickeltracker/nickeltracker.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5714D914-88ED-4F1F-ACA0-19101171759D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/FuentesWorks/NickelTracker-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5714D914-88ED-4F1F-ACA0-19101171759D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5714D914-88ED-4F1F-ACA0-19101171759D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NickelTracker-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
