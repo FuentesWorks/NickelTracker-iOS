@@ -1,0 +1,7 @@
+CREATE TABLE Accounts ();
+
+CREATE TABLE Categories ();
+
+CREATE TABLE Transactions (
+    id INTEGER PRIMARY KEY,
+    datea DATE);

@@ -19,6 +19,10 @@
 		957D71531926AEE500FEB66D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957D713B1926AEE500FEB66D /* UIKit.framework */; };
 		957D715B1926AEE500FEB66D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 957D71591926AEE500FEB66D /* InfoPlist.strings */; };
 		957D715D1926AEE500FEB66D /* nickeltrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 957D715C1926AEE500FEB66D /* nickeltrackerTests.m */; };
+		957D71691926B13000FEB66D /* db.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 957D71681926B13000FEB66D /* db.sqlite3 */; };
+		957D716C1926B30A00FEB66D /* FWKDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 957D716B1926B30A00FEB66D /* FWKDBManager.m */; };
+		957D716E1926B50D00FEB66D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957D716D1926B50D00FEB66D /* CoreData.framework */; };
+		957D71711926B6D600FEB66D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 957D716F1926B6D600FEB66D /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		957D71581926AEE500FEB66D /* nickeltrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "nickeltrackerTests-Info.plist"; sourceTree = "<group>"; };
 		957D715A1926AEE500FEB66D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		957D715C1926AEE500FEB66D /* nickeltrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nickeltrackerTests.m; sourceTree = "<group>"; };
+		957D71661926B0EB00FEB66D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		957D71681926B13000FEB66D /* db.sqlite3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = db.sqlite3; sourceTree = "<group>"; };
+		957D716A1926B30A00FEB66D /* FWKDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWKDBManager.h; sourceTree = "<group>"; };
+		957D716B1926B30A00FEB66D /* FWKDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWKDBManager.m; sourceTree = "<group>"; };
+		957D716D1926B50D00FEB66D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		957D71701926B6D600FEB66D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				957D716E1926B50D00FEB66D /* CoreData.framework in Frameworks */,
 				957D713A1926AEE500FEB66D /* CoreGraphics.framework in Frameworks */,
 				957D713C1926AEE500FEB66D /* UIKit.framework in Frameworks */,
 				957D71381926AEE500FEB66D /* Foundation.framework in Frameworks */,
@@ -96,6 +107,8 @@
 		957D71361926AEE500FEB66D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				957D716D1926B50D00FEB66D /* CoreData.framework */,
+				957D71661926B0EB00FEB66D /* libsqlite3.dylib */,
 				957D71371926AEE500FEB66D /* Foundation.framework */,
 				957D71391926AEE500FEB66D /* CoreGraphics.framework */,
 				957D713B1926AEE500FEB66D /* UIKit.framework */,
@@ -107,6 +120,9 @@
 		957D713D1926AEE500FEB66D /* nickeltracker */ = {
 			isa = PBXGroup;
 			children = (
+				957D716F1926B6D600FEB66D /* Model.xcdatamodeld */,
+				957D716A1926B30A00FEB66D /* FWKDBManager.h */,
+				957D716B1926B30A00FEB66D /* FWKDBManager.m */,
 				957D71461926AEE500FEB66D /* FWKAppDelegate.h */,
 				957D71471926AEE500FEB66D /* FWKAppDelegate.m */,
 				957D71491926AEE500FEB66D /* Images.xcassets */,
@@ -118,6 +134,7 @@
 		957D713E1926AEE500FEB66D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				957D71681926B13000FEB66D /* db.sqlite3 */,
 				957D713F1926AEE500FEB66D /* nickeltracker-Info.plist */,
 				957D71401926AEE500FEB66D /* InfoPlist.strings */,
 				957D71431926AEE500FEB66D /* main.m */,
@@ -220,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				957D71691926B13000FEB66D /* db.sqlite3 in Resources */,
 				957D71421926AEE500FEB66D /* InfoPlist.strings in Resources */,
 				957D714A1926AEE500FEB66D /* Images.xcassets in Resources */,
 			);
@@ -241,7 +259,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				957D71441926AEE500FEB66D /* main.m in Sources */,
+				957D716C1926B30A00FEB66D /* FWKDBManager.m in Sources */,
 				957D71481926AEE500FEB66D /* FWKAppDelegate.m in Sources */,
+				957D71711926B6D600FEB66D /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +468,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		957D716F1926B6D600FEB66D /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				957D71701926B6D600FEB66D /* Model.xcdatamodel */,
+			);
+			currentVersion = 957D71701926B6D600FEB66D /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 957D712C1926AEE500FEB66D /* Project object */;
 }
